@@ -1,0 +1,236 @@
+/* ACCOUNT PAGE */
+
+.account-page {
+  min-height: calc(100vh - 80px);
+  background: #f8f0df;
+  padding: 45px 5%;
+}
+
+
+/* MAIN BOX */
+
+.account-container {
+  max-width: 1160px;
+  margin: auto;
+  padding: 40px 55px;
+  background: #fffaf0;
+
+  border: 2px solid #b99d78;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 15px rgba(70, 45, 25, 0.15);
+}
+
+
+/* HEADING */
+
+.account-heading {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+
+.user-icon {
+  width: 75px;
+  height: 75px;
+
+  background: #f1dfc5;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 38px;
+}
+
+
+.account-heading h1 {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  color: #321b12;
+  margin: 0;
+}
+
+
+.account-heading p {
+  margin-top: 8px;
+  font-size: 17px;
+  color: #4d4039;
+}
+
+
+/* FORM */
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+
+.form-group label {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 9px;
+  color: #24170f;
+}
+
+
+/* INPUT BOX */
+
+.input-box {
+  height: 65px;
+
+  border: 2px solid #d0c5b5;
+  border-radius: 10px;
+
+  background: #fffdf8;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 18px;
+
+  transition: 0.3s;
+}
+
+
+.input-box:focus-within {
+  border-color: #9a713b;
+  box-shadow: 0 0 5px rgba(154, 113, 59, 0.2);
+}
+
+
+.input-box span {
+  font-size: 21px;
+  margin-right: 17px;
+}
+
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 16px;
+  color: #38251b;
+}
+
+
+.input-box input::placeholder {
+  color: #8b8580;
+}
+
+
+/* PASSWORD EYE */
+
+.eye-button {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/* BUTTONS */
+
+.account-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+
+  margin-top: 15px;
+}
+
+
+.account-buttons button {
+  border: none;
+
+  min-width: 250px;
+  padding: 17px 25px;
+
+  border-radius: 10px;
+
+  color: white;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+/* DELETE */
+
+.delete-btn {
+  background: #b51e2b;
+}
+
+
+/* UPDATE */
+
+.update-btn {
+  background: #bd8b28;
+}
+
+
+/* SUBMIT */
+
+.submit-btn {
+  background: #542817;
+}
+
+
+/* HOVER */
+
+.account-buttons button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .account-page {
+    padding: 25px 15px;
+  }
+
+
+  .account-container {
+    padding: 30px 20px;
+  }
+
+
+  .account-heading h1 {
+    font-size: 35px;
+  }
+
+
+  .account-heading p {
+    font-size: 14px;
+  }
+
+
+  .account-buttons {
+    flex-direction: column;
+  }
+
+
+  .account-buttons button {
+    width: 100%;
+    min-width: 0;
+  }
+
+}

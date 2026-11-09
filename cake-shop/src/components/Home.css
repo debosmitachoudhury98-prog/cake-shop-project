@@ -1,0 +1,362 @@
+/* MAIN PAGE */
+
+.home-page {
+  background: #f8f5e9;
+  min-height: calc(100vh - 80px);
+  overflow: hidden;
+}
+
+
+/* HERO SECTION */
+
+.hero-section {
+  min-height: calc(100vh - 80px);
+  padding: 40px 5%;
+}
+
+
+/* LEFT SIDE */
+
+.hero-left {
+  position: relative;
+  min-height: 750px;
+  padding: 70px 30px 30px 40px;
+}
+
+
+/* SMALL TITLE */
+
+.small-heading {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  color: #24170f;
+}
+
+
+/* MAIN HEADING */
+
+.hero-left h1 {
+  font-family: Georgia, serif;
+  font-size: 55px;
+  line-height: 1.08;
+  font-weight: bold;
+  color: #29170f;
+  margin-bottom: 25px;
+}
+
+
+/* DESCRIPTION */
+
+.hero-text {
+  font-size: 17px;
+  color: #5d514b;
+  max-width: 420px;
+  line-height: 1.6;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons {
+  display: flex;
+  gap: 25px;
+  margin-top: 45px;
+  flex-wrap: wrap;
+}
+
+
+.gold-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #24170f;
+  background: #e4ac4a;
+  padding: 17px 28px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0 5px 12px rgba(172, 96, 2, 0.25);
+  transition: 0.3s;
+}
+
+
+.gold-btn:hover {
+  background: #b18b38;
+  color: white;
+  transform: translateY(-3px);
+}
+
+
+/* BERRY CARD */
+
+.berry-card {
+  position: absolute;
+  bottom: 50px;
+  left: 45%;
+  width: 230px;
+  height: 150px;
+  border: 5px solid #c8b98e;
+  padding: 5px;
+  background: #fffdf5;
+}
+
+
+.berry-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* SOCIAL ICONS */
+
+.social-icons {
+  position: absolute;
+  bottom: 65px;
+  left: 40px;
+  display: flex;
+  gap: 25px;
+}
+
+
+.social-icons span {
+  font-size: 28px;
+  color: #a8893d;
+  cursor: pointer;
+}
+
+
+/* RIGHT SIDE */
+
+.hero-right {
+  position: relative;
+  min-height: 750px;
+  background: #bd91e8;
+  padding: 20px;
+}
+
+
+/* MAIN CAKE */
+
+.main-cake-box {
+  width: 80%;
+  height: 650px;
+  margin-left: 12%;
+  margin-top: 40px;
+  border: 5px solid #c4aa67;
+  padding: 7px;
+  background: #c69aed;
+}
+
+
+.main-cake {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* MACARONS */
+
+.macaron-images {
+  position: absolute;
+  top: -30px;
+  left: -90px;
+  z-index: 5;
+  width: 260px;
+  height: 180px;
+}
+
+
+.macaron-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+/* CUPCAKE */
+
+.cupcake-card {
+  position: absolute;
+  right: 5px;
+  bottom: 30px;
+  width: 250px;
+  height: 250px;
+  border: 5px solid #c4aa67;
+  padding: 7px;
+  background: #c69aed;
+}
+
+
+.cupcake-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* NAVBAR */
+
+.luxury-navbar {
+  background: #f8f0d9;
+  min-height: 80px;
+  border-bottom: 1px solid #ded2b3;
+}
+
+
+.logo {
+  color: #24170f !important;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  line-height: 0.9;
+}
+
+
+.logo small {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+
+.logo-icon {
+  font-size: 38px;
+}
+
+
+/* NAV LINKS */
+
+.luxury-navbar .nav-link {
+  color: #24170f !important;
+  font-size: 15px;
+  margin-left: 10px;
+  padding: 10px 12px !important;
+  font-weight: 500;
+}
+
+
+.luxury-navbar .nav-link:hover {
+  color: #9b762b !important;
+}
+
+
+/* CART */
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.cart-count {
+  background: #392015;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+
+  .hero-left {
+    min-height: auto;
+    padding: 50px 25px;
+  }
+
+
+  .hero-left h1 {
+    font-size: 45px;
+  }
+
+
+  .hero-right {
+    min-height: 600px;
+    margin-top: 30px;
+  }
+
+
+  .main-cake-box {
+    height: 500px;
+    width: 85%;
+  }
+
+
+  .berry-card {
+    position: relative;
+    left: 0;
+    bottom: auto;
+    margin-top: 50px;
+  }
+
+
+  .social-icons {
+    position: relative;
+    left: 0;
+    bottom: auto;
+    margin-top: 30px;
+  }
+
+
+  .macaron-images {
+    left: -20px;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+
+  .hero-left h1 {
+    font-size: 38px;
+  }
+
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+
+  .gold-btn {
+    text-align: center;
+  }
+
+
+  .hero-right {
+    min-height: 450px;
+  }
+
+
+  .main-cake-box {
+    height: 380px;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+
+  .macaron-images {
+    width: 160px;
+    height: 120px;
+    left: -10px;
+  }
+
+
+  .cupcake-card {
+    width: 150px;
+    height: 150px;
+  }
+
+}
